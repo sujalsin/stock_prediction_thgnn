@@ -1,6 +1,6 @@
 # Temporal and Heterogeneous Graph Neural Network for Stock Price Prediction
 
-This project implements a Temporal and Heterogeneous Graph Neural Network (THGNN) for stock price prediction, based on the paper "Temporal and Heterogeneous Graph Neural Network for Financial Time Series Prediction" by Sheng Xiang et al.
+This project tries to implement a Temporal and Heterogeneous Graph Neural Network (THGNN) for stock price prediction, based on the paper "Temporal and Heterogeneous Graph Neural Network for Financial Time Series Prediction" by Sheng Xiang et al.
 
 ## Project Structure
 
@@ -107,13 +107,7 @@ Dataset Statistics:
 - Feature Normalization: Z-score standardization
 - Dynamic graph construction based on stock correlations
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Citation
-
-If you use this code in your research, please cite:
 
 ```
 @article{xiang2021temporal,
