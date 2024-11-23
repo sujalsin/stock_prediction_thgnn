@@ -1,0 +1,36 @@
+# Stock data configuration
+data:
+  symbols:
+    - AAPL
+    - GOOGL
+    - MSFT
+    - AMZN
+    - META
+  start_date: '2020-01-01'
+  end_date: '2023-12-31'
+  window_size: 20  # Temporal sequence length
+
+# Model configuration
+model:
+  input_dim: 9  # Number of features per node
+  hidden_dim: 64  # Hidden dimension for better representation
+  num_layers: 2  # Number of GNN layers
+  dropout: 0.3  # Dropout rate for regularization
+  output_dim: 1  # Predicting next day return
+
+# Training configuration
+training:
+  batch_size: 32
+  learning_rate: 0.001
+  num_epochs: 50
+  patience: 10
+  weight_decay: 0.0001
+  clip_grad_norm: 1.0
+
+# Paths
+paths:
+  checkpoint_dir: 'checkpoints'
+  output_dir: 'output'
+  log_dir: 'logs'
+  model_dir: 'checkpoints'
+  data_dir: 'data'
